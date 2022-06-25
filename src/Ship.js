@@ -1,11 +1,12 @@
 class Ship {
     constructor (port){
-        this.startingPort = port;
+        this.startingPort =port;
     };
     setSail() {
         this.startingPort = "" ;
     }
 };
+
         
     // const hasstartingPort = this.startingPort;
 
