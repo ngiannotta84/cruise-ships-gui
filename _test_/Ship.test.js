@@ -4,12 +4,13 @@ describe ('Ship',() => {
     it ('can be instantiated',()=> {
         expect(new Ship()).toBeInstanceOf(Object);
     });
-    it ('sets the name of the property',() => {
-        const ship = new Ship ("ship");
-        expect (ship.name).toBe("ship");
-    });
-    it ('has a startingport',()=>{
-        const ship = new Ship("ship","Dover");
+    it ('has a starting port',()=>{
+        const ship = new Ship("Dover");
         expect(ship.startingPort).toBe("Dover");
     });
+    it ('can set sail',() =>{
+        const ship = new Ship ("Dover");
+        ship.setSail();
+        expect(ship.startingPort).toBeFalsy();
+    })
 });
