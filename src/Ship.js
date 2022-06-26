@@ -1,9 +1,12 @@
 class Ship {
-    constructor (port){
-        this.startingPort =port;
+    constructor (portname){
+        this.currentPort =portname;
     };
     setSail() {
-        this.startingPort = "" ;
+        this.currentPort = "" ;
+    }
+    dock(port){
+        this.currentPort = port ;
     }
 };
 
@@ -12,7 +15,7 @@ class Ship {
 
     // if (hasstartingPort) {this.startingPort=false }
     // else {this.startingPort=true }
-    //     };
+    //     }; 
     // } 
 
 

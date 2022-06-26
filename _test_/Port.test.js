@@ -4,7 +4,7 @@ describe ("Port",() => {
 it('can be instantiated',() => {
 expect(new Port()).toBeInstanceOf(Object)});
 it("give a name to the Port",() => {
-const namePort = new Port("Brighton");
-expect(namePort.name).toEqual ("Brighton")
+const port = new Port("Brighton");
+expect(port.name).toEqual ("Brighton")
 })
 });
