@@ -15,6 +15,7 @@ describe ('Ship',() => {
         const ship = new Ship (port);
         ship.setSail();
         expect(ship.currentPort).toBeFalsy();
+        expect(ship.previousPort).toBe(port);
     })
 });
 describe ('Dock',()=>{
