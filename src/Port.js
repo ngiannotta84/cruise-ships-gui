@@ -7,7 +7,9 @@ class Port {
     addShip(ship){
         this.ships.push(ship);
     }
-    removeShip(){
+    removeShip(ship){
+    const removedShip = this.ships.filter(items => items!== ship);
+    this.ships = removedShip    
     }
 };
 
