@@ -1,6 +1,5 @@
 /* globals describe it expects*/
 const Ship = require ('../src/Ship.js');
-const Itinerary = require ('../src/Itinerary.js')
 describe ('Ship',() => {
     describe ('with ports and an itinerary',() => {
         let ship;
@@ -11,7 +10,7 @@ describe ('Ship',() => {
             dover = {removeShip:jest.fn(),
             addShip:jest.fn()};
             calais = {addShip:jest.fn()};
-            itinerary = new Itinerary ([dover,calais]);
+            itinerary = {ports:[dover,calais]};
             ship = new Ship (itinerary);
         });
         it ('can be instantiated',()=> {
