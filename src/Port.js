@@ -5,11 +5,10 @@ class Port {
     };
 
     addShip(ship){
-        this.ships.push(ship);
+    this.ships.push(ship);
     }
     removeShip(ship){
-    const removedShip = this.ships.filter(items => items!== ship);
-    this.ships = removedShip    
+    this.ships = this.ships.filter(items => items!== ship);  
     }
 };
 
