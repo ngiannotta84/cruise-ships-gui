@@ -19,6 +19,7 @@ describe ('Ship',() => {
         it ('has a starting port',()=>{
             expect(ship.currentPort).toBe(dover);
         });
+        
         it ('can set sail',() =>{
             ship.setSail();
             expect(dover.removeShip).toHaveBeenCalled();
